@@ -2,6 +2,7 @@ package com.kaitzen;
 
 public class App 
 {
+<<<<<<< HEAD
 	 public static void main( String[] args )
 	    {
 	        System.out.println("---------------- Cuenta 1 ----------------");
@@ -27,4 +28,10 @@ public class App
 	        c3.setName(null);
 	        System.out.println(c3);
 	    }
+=======
+    public static void main( String[] args )
+    {
+        
+    }
+>>>>>>> master
 }

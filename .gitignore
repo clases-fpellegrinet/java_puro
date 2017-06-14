@@ -1,3 +1,7 @@
 .metadata
 .idea
 *.class
+*.iml
+.project
+bin
+*/target
