@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Administracion de clientes</title>
+	<link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="encabezado" style="background-color: #F2F2F2; height: 25px; " class="encabezado" >Sistema de gestión empresarial</div>
+	<h1 class="titulos">Administrar Clientes</h1>
+	<p class="subtitulos">Información personal de los clientes</p>
+	<form method="post" action="./Clientes">
+	<table width="675" cellpadding="4" cellspacing="0" border="1" class="textoEtiquetas" style="padding-left: 20px;" >
+		<tr>
+			<td width="100">
+				Datos Personales:
+			</td>
+			<td width="275">
+				Nombre:
+				<input name="nombre" type="text" size="30" class="input">
+			</td>
+		    <td width="300">Apellido:
+	          <input name="apellido" type="text" size="28" class="input">
+	        </td>
+		</tr>
+		<tr bgcolor="#CCCCCC">
+          <td height="1" colspan="3"></td>
+		</tr>
+		<tr>
+			<td>Tipo y N° Doc:</td>	
+			<td colspan="2">
+				<select name="tipoDoc" class="input" >
+					<option value="DNI">DNI</option>
+					<option value="LC">LC</option>
+					<option value="LE">LE</option>
+					<option value="CI">Ced. Id.</option>
+					<option value="Pasaporte">Pasaporte</option>
+				</select>
+				<input name="nroDoc" type="text" size="12" class="input">				
+			</td>
+	    </tr>
+	    <tr bgcolor="#CCCCCC">
+          <td height="1" colspan="3"></td>
+		</tr>
+		<tr>
+			<td>Condición IVA:</td>	
+			<td colspan="2" style="width: 527px">				
+				Monotributista<input type="radio" name="optCondFiscal" class="input" value="MONOTRIBUTO" >
+				Responsable Inscripto<input type="radio" name="optCondFiscal" class="input" value="RESPONSABLE_INSCRIPTO">
+				Exento<input type="radio"  name="optCondFiscal" class="input" value="EXENTO" >
+			</td>
+		</tr>
+		<tr bgcolor="#CCCCCC">
+			<td height="1" colspan="3"></td>
+		</tr>
+		<tr>
+			<td>E-mail:</td>	
+			<td colspan="2">
+			<input name="email" type="text" size="40" class="input"></td>
+		</tr>
+
+		<tr bgcolor="#CCCCCC">
+          <td height="1" colspan="3"></td>
+		</tr>
+		
+		<tr>
+			<td>Domicilio:</td>	
+			<td >
+				Calle:<input name="calle" type="text" size="35" class="input">
+			</td>
+			<td>Número:
+				<input name="nroCalle" type="text" size="5" class="input">
+				Piso:
+				<input name="piso" type="text" size="2" class="input">
+				Depto:
+				<input name="depto" type="text" size="2" class="input">				
+			</td>
+	    </tr>
+		<tr bgcolor="#CCCCCC">
+          <td height="1" colspan="3"></td>
+		</tr>
+		<tr>
+			<td>Localidad:</td>	
+			<td colspan="2">
+			<input name="localidad" type="text" size="40" class="input">
+			Código Postal:
+			<input name="codPostal" type="text" size="6" class="input"/>
+			</td>
+	    </tr>
+		<tr bgcolor="#CCCCCC">
+			<td height="1" colspan="3"></td>
+		</tr>
+		<tr>
+			<td>Situación Laboral:</td>	
+			<td colspan="2">
+				<select name="sitLaboral" class="input" value="">
+					<option value="1">Empleado Relación de dependencia</option>
+					<option value="2">Profesional independiente</option>
+					<option value="5">Autónomo / Cuentapropista</option>
+					<option value="4">Estudiante</option>
+					<option value="3">Desocupado</option>
+				</select>
+			</td>
+	    </tr>
+		<tr bgcolor="#CCCCCC">
+			<td height="1" colspan="3"></td>
+		</tr>
+		<tr>
+			<td>Tarjeta Credito 1:</td>	
+			<td colspan="2">
+				<select name="marcaTarjeta1" class="input" value="">
+					<option value="1">VISA</option>
+					<option value="2">MasterCard</option>
+					<option value="3">AMEX</option>
+				</select>
+				Banco Emisor: 
+				<input name="txtBancoEmisor1" type="text" size="12" class="input"/>
+				Fecha Vencimiento(MMAAAA)
+				<input name="txtFechaVenc1" type="text" size="16" class="input"/>
+			</td>
+	    </tr>
+		<tr bgcolor="#CCCCCC">
+			<td height="1" colspan="3"></td>
+		</tr>
+		<tr>
+			<td>Tarjeta Crédito 2:</td>	
+			<td colspan="2">
+				<select name="marcaTarjeta2" class="input" value="">
+					<option value="1">VISA</option>
+					<option value="2">MasterCard</option>
+					<option value="3">AMEX</option>
+				</select>
+				Banco Emisor: 
+				<input name="txtBancoEmisor2" type="text" size="12" class="input"/>
+				Fecha Vencimiento(MMAAAA)
+				<input name="txtFechaVenc2" type="text" size="16" class="input"/>
+			</td>
+	    </tr>
+	<tr bgcolor="#CCCCCC">
+			<td height="1" colspan="3"></td>
+		</tr>
+		<tr>
+			<td>Intereses:</td>	
+			<td colspan="2">
+				<select name="cmbIntereses" class="input" value="" multiple="multiple">
+					<option value="1">Electrodomésticos</option>
+					<option value="2">Blanco / Hogar</option>
+					<option value="3">Muebles </option>
+					<option value="4">Indumentaria</option>					
+				</select>
+			</td>
+	    </tr>
+		<tr>
+			<td height="5" colspan="3"></td>
+		</tr>
+		<tr bgcolor="#999999">
+			<td height="2" colspan="3"></td>
+		</tr>
+		<tr>
+			<td colspan="3">
+		    	<div align="center">
+					<input type="submit" value="Guardar" class="boton"> 
+				</div>
+			</td>
+		</tr>
+  </table>
+  <div id="encabezado" style="background-color: #F2F2F2; height: 25px; font-family: serif; font-size: 8px; text-align: right;"  >Desarrollado por xxxyyyxxxx</div>
+</form>
+</body>
+</html>
